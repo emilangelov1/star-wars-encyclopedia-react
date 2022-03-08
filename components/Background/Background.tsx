@@ -4,18 +4,9 @@ import Particles from "react-tsparticles";
 type Props = {};
 
 export default function Background({ children }: any) {
-  const particlesInit = (main: any) => {
-    // console.log(main);
-  };
-
-  const particlesLoaded = (container: any) => {
-    // console.log(container);
-  };
   return (
     <Particles
       id="tsparticles"
-      init={particlesInit}
-      loaded={particlesLoaded}
       options={{
         background: {
           color: {
