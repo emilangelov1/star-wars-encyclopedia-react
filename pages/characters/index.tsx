@@ -1,4 +1,4 @@
-import { Button, Col, Input, Row, Spin } from "antd";
+import { Button, Col, Row } from "antd";
 import React from "react";
 import Background from "../../components/Background/Background";
 import Cards from "../../components/Cards/Cards";
@@ -11,7 +11,7 @@ import Link from "next/link";
 
 type Props = {};
 
-export default function characters({}: Props) {
+export default function Characters({}: Props) {
   const { data, loading } = useAllCharactersQuery();
 
   if (loading) {
