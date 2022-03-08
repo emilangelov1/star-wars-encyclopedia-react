@@ -4,11 +4,11 @@ import Particles from "react-tsparticles";
 type Props = {};
 
 export default function Background({ children }: any) {
-  const particlesInit = (main) => {
+  const particlesInit = (main: any) => {
     // console.log(main);
   };
 
-  const particlesLoaded = (container) => {
+  const particlesLoaded = (container: any) => {
     // console.log(container);
   };
   return (
