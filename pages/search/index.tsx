@@ -25,12 +25,13 @@ const CardText = styled(Text)`
   font-size: 2rem;
   font-weight: bolder;
   color: white;
+  margin: 10px;
   text-shadow: 1px 1px 10px rgb(0, 0, 0);
 `;
 
 const CardButton = styled(Button)`
   border: none;
-  width: 100%;
+  width: 80%;
   color: rgba(0, 0, 0, 0.6);
   font-size: 1.5rem;
   text-align: center;

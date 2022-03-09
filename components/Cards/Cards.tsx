@@ -10,7 +10,10 @@ const AnimatedButton = styled(animated.div)`
   align-items: center;
   flex-direction: column;
   margin: 50px;
-  padding: 150px 100px;
+  max-width: 90%;
+  width: 200px;
+  max-height: 90%;
+  height: 400px;
   border-radius: 20px;
   background-color: rgba(128, 128, 128, 0.4);
   backdrop-filter: blur(2px);
