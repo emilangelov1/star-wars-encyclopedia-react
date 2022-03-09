@@ -1,6 +1,11 @@
+import styled from "@emotion/styled";
 import React, { useEffect, useState } from "react";
 import { animated, useSpring, useTransition } from "react-spring";
-import styles from "./DelayedButton.module.css";
+
+const AnimatedButtonDiv = styled(animated.div)`
+  position: absolute;
+  perspective: 400px;
+`;
 
 type Props = {
   children: React.ReactElement;
@@ -30,9 +35,5 @@ export default function DelayedButton({
           transform: "translate(-10000px, 0px)",
         },
   });
-  return (
-    <animated.div className={styles.animatedButton} style={transition}>
-      {children}
-    </animated.div>
-  );
+  return <AnimatedButtonDiv style={transition}>{children}</AnimatedButtonDiv>;
 }

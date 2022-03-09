@@ -1,11 +1,21 @@
 import React from "react";
-import { useGesture, useHover } from "react-use-gesture";
-import { ReactEventHandlers } from "react-use-gesture/dist/types";
-import { Card } from "antd";
-import { config } from "process";
+import { useGesture } from "react-use-gesture";
 import { animated, to, useSpring } from "react-spring";
-import styles from "./Cards.module.css";
-import useMeasure, { RectReadOnly } from "react-use-measure";
+import useMeasure from "react-use-measure";
+import styled from "@emotion/styled";
+
+const AnimatedButton = styled(animated.div)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px;
+  padding: 150px 100px;
+  border-radius: 20px;
+  background-color: rgba(128, 128, 128, 0.4);
+  backdrop-filter: blur(2px);
+  transition: 0.2s;
+`;
 
 type Props = {};
 
@@ -48,8 +58,7 @@ export default function Cards({ children }: any) {
 
   return (
     <div ref={ref}>
-      <animated.div
-        className={styles.Card}
+      <AnimatedButton
         {...bind()}
         style={{
           transform: "perspective(600px)",
@@ -59,7 +68,7 @@ export default function Cards({ children }: any) {
         }}
       >
         {children}
-      </animated.div>
+      </AnimatedButton>
     </div>
   );
 }
