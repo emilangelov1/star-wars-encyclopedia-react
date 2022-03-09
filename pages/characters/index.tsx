@@ -1,3 +1,4 @@
+import styles from "./index.module.css";
 import { Button, Col, Row } from "antd";
 import React from "react";
 import Background from "../../components/Background/Background";
@@ -5,7 +6,6 @@ import Cards from "../../components/Cards/Cards";
 import { useAllCharactersQuery } from "../../graphql/graphql-hooks";
 import LoadingScreen from "../../components/LoadingScreen/LoadingScreen";
 import Text from "antd/lib/typography/Text";
-import styles from "./index.module.css";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import Link from "next/link";
 

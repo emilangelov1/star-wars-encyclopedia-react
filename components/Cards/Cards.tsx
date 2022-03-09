@@ -14,9 +14,9 @@ export default function Cards({ children }: any) {
   const calculateBoxCenterY = () => bounds.top + bounds.height / 2;
   const calculateBoxCenterX = () => bounds.left + bounds.width / 2;
   const calcX = (y: number, ly: number) =>
-    -(y - ly - calculateBoxCenterY()) / 80;
+    -(y - ly - calculateBoxCenterY()) / 60;
   const calcY = (x: number, lx: number) =>
-    (x - lx - calculateBoxCenterX()) / 80;
+    (x - lx - calculateBoxCenterX()) / 60;
   const [{ scale, rotateX, rotateY, zoom, x, y }, set] = useSpring(() => ({
     rotateX: 0,
     rotateY: 0,
