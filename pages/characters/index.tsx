@@ -14,6 +14,7 @@ type Props = {};
 export default function Characters({}: Props) {
   const { data, loading } = useAllCharactersQuery();
 
+  console.log("please work");
   if (loading) {
     <LoadingScreen />;
   }
